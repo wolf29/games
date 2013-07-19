@@ -1,0 +1,22 @@
+RMV command
+
+Command syntax:
+
+rmv [file or folder]
+  - This created the Trash2 folder, if it doesn't already exist, 
+    and then puts the named file or folder into Trash2.  If you 
+    feel the need to double-check your action, just look in the 
+    /home/your_profile/Trash2 folder
+    ls $HOME/Trash2
+
+rmv is a small bash command meant to address a concern among new users that in Linux they can lose files accidentally by using the rm command at the wrong time.
+
+rmv is an alternate to the rm command that removes the file to a special folder in the user's profile called "Trash2."
+
+This script was started at a Linux Freedom Fest hosted on 2/19/2011 by Ale.org and sourcefreedom.com at the Atlanta campus of ITT Technical Institute.  The collaborators were the students of ITT and community members in attendance.  
+
+The name of the command came from Aaron Ruscetta and the initial coding was typed by Wolf Halton.  Contact, wolf@sourcefreedom.com
+
+To use this command, it must be somewhere in all users' PATH, so place it in /usr/local/bin:
+
+# cp rmv /usr/local/bin  
